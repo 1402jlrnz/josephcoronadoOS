@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OS Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">⚙️</span>
+                <span>OS Project</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#installation" class="nav-link">OS Installation</a></li>
+                <li><a href="#laboratory" class="nav-link">Laboratory Activities</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section">
+            <div class="container">
+                <div class="hero">
+                    <h1>Operating System</h1>
+                    <p class="hero-subtitle">The fundamental software that powers modern computing</p>
+                </div>
+                
+                <div class="content-card">
+                    <h2>What is an Operating System?</h2>
+                    <p>An <strong>Operating System (OS)</strong> is system software that manages computer hardware, software resources, and provides common services for computer programs. It acts as an intermediary between users and the computer hardware, making it easier to interact with complex systems.</p>
+                    
+                    <h3>Core Functions</h3>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon">🖥️</div>
+                            <h4>Process Management</h4>
+                            <p>Controls the creation, scheduling, and termination of processes and applications.</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">💾</div>
+                            <h4>Memory Management</h4>
+                            <p>Allocates and deallocates memory space for programs efficiently.</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">📁</div>
+                            <h4>File Management</h4>
+                            <p>Organizes and manages files and directories on storage devices.</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🔒</div>
+                            <h4>Security</h4>
+                            <p>Protects system resources and data from unauthorized access.</p>
+                        </div>
+                    </div>
+                    
+                    <h3>Types of Operating Systems</h3>
+                    <ul class="os-types">
+                        <li><strong>Batch OS</strong> - Processes jobs in batches without user interaction</li>
+                        <li><strong>Time-Sharing OS</strong> - Allows multiple users to share system resources simultaneously</li>
+                        <li><strong>Distributed OS</strong> - Manages a group of independent computers as a single system</li>
+                        <li><strong>Real-Time OS</strong> - Provides immediate response for time-critical operations</li>
+                        <li><strong>Embedded OS</strong> - Designed for specialized devices and appliances</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- OS Installation Section -->
+        <section id="installation" class="section">
+            <div class="container">
+                <h2 class="section-title">OS Installation</h2>
+                <p class="section-description">Step-by-step video tutorials for installing various operating systems</p>
+                
+                <div class="video-grid">
+                    <!-- Video 1 -->
+                    <div class="video-card">
+                        <div class="video-placeholder">
+                            <div class="play-icon">▶</div>
+                            <span>Add YouTube Link</span>
+                        </div>
+                        <div class="video-info">
+                            <h3>Video 1: Introduction to OS Installation</h3>
+                            <p>Overview of the installation process and requirements.</p>
+                            <div class="link-input-group">
+                                <input type="text" class="link-input" placeholder="Paste YouTube URL here..." data-video="1">
+                                <button class="save-btn" onclick="saveLink(1)">Save</button>
+                            </div>
+                            <a href="#" class="video-link" id="link-1" target="_blank" style="display: none;">
+                                <span>Watch on YouTube</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Video 2 -->
+                    <div class="video-card">
+                        <div class="video-placeholder">
+                            <div class="play-icon">▶</div>
+                            <span>Add YouTube Link</span>
+                        </div>
+                        <div class="video-info">
+                            <h3>Video 2: Preparing Installation Media</h3>
+                            <p>Creating bootable USB drives and ISO preparation.</p>
+                            <div class="link-input-group">
+                                <input type="text" class="link-input" placeholder="Paste YouTube URL here..." data-video="2">
+                                <button class="save-btn" onclick="saveLink(2)">Save</button>
+                            </div>
+                            <a href="#" class="video-link" id="link-2" target="_blank" style="display: none;">
+                                <span>Watch on YouTube</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Video 3 -->
+                    <div class="video-card">
+                        <div class="video-placeholder">
+                            <div class="play-icon">▶</div>
+                            <span>Add YouTube Link</span>
+                        </div>
+                        <div class="video-info">
+                            <h3>Video 3: Windows Installation</h3>
+                            <p>Complete guide to installing Windows OS.</p>
+                            <div class="link-input-group">
+                                <input type="text" class="link-input" placeholder="Paste YouTube URL here..." data-video="3">
+                                <button class="save-btn" onclick="saveLink(3)">Save</button>
+                            </div>
+                            <a href="#" class="video-link" id="link-3" target="_blank" style="display: none;">
+                                <span>Watch on YouTube</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Video 4 -->
+                    <div class="video-card">
+                        <div class="video-placeholder">
+                            <div class="play-icon">▶</div>
+                            <span>Add YouTube Link</span>
+                        </div>
+                        <div class="video-info">
+                            <h3>Video 4: Linux Installation</h3>
+                            <p>Step-by-step Linux distribution installation.</p>
+                            <div class="link-input-group">
+                                <input type="text" class="link-input" placeholder="Paste YouTube URL here..." data-video="4">
+                                <button class="save-btn" onclick="saveLink(4)">Save</button>
+                            </div>
+                            <a href="#" class="video-link" id="link-4" target="_blank" style="display: none;">
+                                <span>Watch on YouTube</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Video 5 -->
+                    <div class="video-card">
+                        <div class="video-placeholder">
+                            <div class="play-icon">▶</div>
+                            <span>Add YouTube Link</span>
+                        </div>
+                        <div class="video-info">
+                            <h3>Video 5: Post-Installation Setup</h3>
+                            <p>Configuring drivers, updates, and essential settings.</p>
+                            <div class="link-input-group">
+                                <input type="text" class="link-input" placeholder="Paste YouTube URL here..." data-video="5">
+                                <button class="save-btn" onclick="saveLink(5)">Save</button>
+                            </div>
+                            <a href="#" class="video-link" id="link-5" target="_blank" style="display: none;">
+                                <span>Watch on YouTube</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Video 6 -->
+                    <div class="video-card">
+                        <div class="video-placeholder">
+                            <div class="play-icon">▶</div>
+                            <span>Add YouTube Link</span>
+                        </div>
+                        <div class="video-info">
+                            <h3>Video 6: Troubleshooting Common Issues</h3>
+                            <p>Solutions to frequent installation problems.</p>
+                            <div class="link-input-group">
+                                <input type="text" class="link-input" placeholder="Paste YouTube URL here..." data-video="6">
+                                <button class="save-btn" onclick="saveLink(6)">Save</button>
+                            </div>
+                            <a href="#" class="video-link" id="link-6" target="_blank" style="display: none;">
+                                <span>Watch on YouTube</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Laboratory Activities Section -->
+        <section id="laboratory" class="section">
+            <div class="container">
+                <h2 class="section-title">Laboratory Activities</h2>
+                <p class="section-description">Hands-on activities and experiments for OS concepts</p>
+                
+                <div class="activities-list">
+                    <!-- Activity 1 -->
+                    <div class="activity-card">
+                        <div class="activity-header">
+                            <div class="activity-number">01</div>
+                            <h3>Activity 1: OS Architecture Analysis</h3>
+                        </div>
+                        <p class="activity-desc">Study and analyze different operating system architectures including monolithic, microkernel, and hybrid designs.</p>
+                        <div class="submenu">
+                            <div class="submenu-title">Resources:</div>
+                            <div class="link-input-group">
+                                <input type="text" class="link-input" placeholder="Paste resource URL here..." data-activity="1">
+                                <button class="save-btn" onclick="saveActivityLink(1)">Save</button>
+                            </div>
+                            <ul class="resource-list" id="resources-1">
+                                <!-- Links will appear here -->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Activity 2 -->
+                    <div class="activity-card">
+                        <div class="activity-header">
+                            <div class="activity-number">02</div>
+                            <h3>Activity 2: Process Management</h3>
+                        </div>
+                        <p class="activity-desc">Implement and demonstrate process creation, scheduling algorithms, and inter-process communication.</p>
+                        <div class="submenu">
+                            <div class="submenu-title">Resources:</div>
+                            <div class="link-input-group">
+                                <input type="text" class="link-input" placeholder="Paste resource URL here..." data-activity="2">
+                                <button class="save-btn" onclick="saveActivityLink(2)">Save</button>
+                            </div>
+                            <ul class="resource-list" id="resources-2">
+                                <!-- Links will appear here -->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Activity 3 -->
+                    <div class="activity-card">
+                        <div class="activity-header">
+                            <div class="activity-number">03</div>
+                            <h3>Activity 3: Memory Management</h3>
+                        </div>
+                        <p class="activity-desc">Explore paging, segmentation, and virtual memory implementation through practical exercises.</p>
+                        <div class="submenu">
+                            <div class="submenu-title">Resources:</div>
+                            <div class="link-input-group">
+                                <input type="text" class="link-input" placeholder="Paste resource URL here..." data-activity="3">
+                                <button class="save-btn" onclick="saveActivityLink(3)">Save</button>
+                            </div>
+                            <ul class="resource-list" id="resources-3">
+                                <!-- Links will appear here -->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Activity 4 -->
+                    <div class="activity-card">
+                        <div class="activity-header">
+                            <div class="activity-number">04</div>
+                            <h3>Activity 4: File Systems</h3>
+                        </div>
+                        <p class="activity-desc">Analyze file system structures, directory organization, and disk scheduling algorithms.</p>
+                        <div class="submenu">
+                            <div class="submenu-title">Resources:</div>
+                            <div class="link-input-group">
+                                <input type="text" class="link-input" placeholder="Paste resource URL here..." data-activity="4">
+                                <button class="save-btn" onclick="saveActivityLink(4)">Save</button>
+                            </div>
+                            <ul class="resource-list" id="resources-4">
+                                <!-- Links will appear here -->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Activity 5 -->
+                    <div class="activity-card">
+                        <div class="activity-header">
+                            <div class="activity-number">05</div>
+                            <h3>Activity 5: Deadlock Handling</h3>
+                        </div>
+                        <p class="activity-desc">Simulate deadlock scenarios and implement prevention, avoidance, and detection algorithms.</p>
+                        <div class="submenu">
+                            <div class="submenu-title">Resources:</div>
+                            <div class="link-input-group">
+                                <input type="text" class="link-input" placeholder="Paste resource URL here..." data-activity="5">
+                                <button class="save-btn" onclick="saveActivityLink(5)">Save</button>
+                            </div>
+                            <ul class="resource-list" id="resources-5">
+                                <!-- Links will appear here -->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Activity 6 -->
+                    <div class="activity-card">
+                        <div class="activity-header">
+                            <div class="activity-number">06</div>
+                            <h3>Activity 6: I/O Systems</h3>
+                        </div>
+                        <p class="activity-desc">Study device drivers, I/O scheduling, and buffer management techniques.</p>
+                        <div class="submenu">
+                            <div class="submenu-title">Resources:</div>
+                            <div class="link-input-group">
+                                <input type="text" class="link-input" placeholder="Paste resource URL here..." data-activity="6">
+                                <button class="save-btn" onclick="saveActivityLink(6)">Save</button>
+                            </div>
+                            <ul class="resource-list" id="resources-6">
+                                <!-- Links will appear here -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 OS Project. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
