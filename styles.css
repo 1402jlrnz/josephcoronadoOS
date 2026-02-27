@@ -507,74 +507,284 @@ main {
     font-size: 0.95rem;
 }
 
+/* Individual OS Page Styles */
+.os-header {
+    margin-bottom: 40px;
+}
+
+.os-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.os-title h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+}
+
+.os-badge {
+    background: var(--primary);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.video-container {
+    background: var(--bg-card);
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-lg);
+    margin-bottom: 40px;
+}
+
+.video-container iframe {
+    display: block;
+    width: 100%;
+    border: none;
+}
+
+.instructions-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.instructions-card,
+.notes-card,
+.navigation-card {
+    background: var(--bg-card);
+    border-radius: 16px;
+    padding: 30px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+}
+
+.instructions-card h2,
+.notes-card h2,
+.navigation-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    color: var(--text-primary);
+}
+
+.setup-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.step {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background: var(--gradient);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: white;
+    flex-shrink: 0;
+}
+
+.step-content {
+    flex: 1;
+}
+
+.step-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--primary);
+}
+
+.step-content p {
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.step-details {
+    background: var(--bg-dark);
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 15px;
+    border: 1px solid var(--border);
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.95rem;
+}
+
+.detail-item:last-child {
+    border-bottom: none;
+}
+
+.detail-label {
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.detail-value {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.notes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.note-item {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    padding: 20px;
+    background: var(--bg-dark);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+}
+
+.note-icon {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--bg-card);
+}
+
+.note-text {
+    flex: 1;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.note-text strong {
+    color: var(--text-primary);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.os-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+}
+
+.os-nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 15px;
+    background: var(--bg-dark);
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--text-secondary);
+    transition: all 0.3s ease;
+    border: 1px solid var(--border);
+}
+
+.os-nav-item:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
+    background: var(--bg-card-hover);
+    color: var(--primary);
+}
+
+.os-nav-icon {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.os-nav-name {
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-align: center;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        flex-direction: column;
-        background: var(--bg-dark);
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-        padding: 20px 0;
-        gap: 0;
-        border-bottom: 1px solid var(--border);
-    }
-
-    .nav-menu.active {
-        left: 0;
-    }
-
-    .nav-link {
-        display: block;
-        padding: 15px 0;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .content-card {
-        padding: 25px;
-    }
-
-    .video-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .activity-desc,
-    .submenu {
-        margin-left: 0;
-        padding-left: 0;
-    }
-
-    .activity-header {
+    .os-title {
         flex-direction: column;
         align-items: flex-start;
         gap: 15px;
     }
-}
 
-@media (max-width: 480px) {
-    .hero h1 {
+    .os-title h1 {
         font-size: 2rem;
     }
 
-    .section-title {
+    .instructions-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .step {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .step-number {
+        align-self: flex-start;
+    }
+
+    .os-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 10px;
+    }
+
+    .os-nav-item {
+        padding: 15px 10px;
+    }
+
+    .os-nav-name {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .os-title h1 {
         font-size: 1.75rem;
     }
 
-    .link-input-group {
-        flex-direction: column;
+    .instructions-card,
+    .notes-card,
+    .navigation-card {
+        padding: 20px;
     }
 
-    .features-grid {
-        grid-template-columns: 1fr;
+    .step-details {
+        padding: 15px;
+    }
+
+    .note-item {
+        padding: 15px;
     }
 }
