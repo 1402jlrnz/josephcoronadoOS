@@ -729,6 +729,31 @@ main {
     text-align: center;
 }
 
+.video-section {
+    margin-bottom: 40px;
+}
+
+.video-section .video-container {
+    background: var(--bg-card);
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-lg);
+    margin-bottom: 40px;
+}
+
+.video-section .video-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    color: var(--text-primary);
+}
+
+.video-section .video-container iframe {
+    display: block;
+    width: 100%;
+    border: none;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .os-title {
