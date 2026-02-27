@@ -287,17 +287,22 @@ main {
     gap: 10px;
 }
 
+.video-thumbnail-link {
+    text-decoration: none;
+    display: block;
+}
+
+.video-thumbnail-link:hover .video-placeholder {
+    background: linear-gradient(135deg, #334155 0%, #475569 100%);
+}
+
+.video-thumbnail-link:hover .play-icon {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.5);
+}
+
 .play-icon {
-    width: 60px;
-    height: 60px;
-    background: var(--gradient);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    color: white;
-    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .video-info {
